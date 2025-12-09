@@ -1,0 +1,23 @@
+digraph {
+  rankdir=LR;
+  node [shape=circle];
+  "__start__" [shape=point];
+  "D3" [shape=circle];
+  "D5" [shape=circle];
+  "D2" [shape=doublecircle];
+  "D1" [shape=circle];
+  "D0" [shape=circle];
+  "D4" [shape=circle];
+  "__start__" -> "D0";
+  "D0" -> "D1" [label="c"];
+  "D0" -> "D2" [label="e"];
+  "D0" -> "D3" [label="a"];
+  "D1" -> "D4" [label="d"];
+  "D3" -> "D5" [label="b"];
+  "D4" -> "D1" [label="c"];
+  "D4" -> "D2" [label="e"];
+  "D4" -> "D3" [label="a"];
+  "D5" -> "D1" [label="c"];
+  "D5" -> "D2" [label="e"];
+  "D5" -> "D3" [label="a"];
+}

@@ -1,0 +1,36 @@
+digraph {
+  rankdir=LR;
+  node [shape=circle];
+  "__start__" [shape=point];
+  "q1" [shape=circle];
+  "q5" [shape=circle];
+  "q9" [shape=circle];
+  "q13" [shape=doublecircle];
+  "q3" [shape=circle];
+  "q4" [shape=circle];
+  "q10" [shape=circle];
+  "q0" [shape=circle];
+  "q2" [shape=circle];
+  "q11" [shape=circle];
+  "q6" [shape=circle];
+  "q12" [shape=circle];
+  "q7" [shape=circle];
+  "q8" [shape=circle];
+  "__start__" -> "q10";
+  "q0" -> "q1" [label="a"];
+  "q2" -> "q3" [label="b"];
+  "q1" -> "q2" [label="ε"];
+  "q4" -> "q5" [label="c"];
+  "q6" -> "q7" [label="d"];
+  "q5" -> "q6" [label="ε"];
+  "q8" -> "q4" [label="ε"];
+  "q8" -> "q0" [label="ε"];
+  "q3" -> "q9" [label="ε"];
+  "q7" -> "q9" [label="ε"];
+  "q10" -> "q8" [label="ε"];
+  "q10" -> "q11" [label="ε"];
+  "q9" -> "q8" [label="ε"];
+  "q9" -> "q11" [label="ε"];
+  "q12" -> "q13" [label="e"];
+  "q11" -> "q12" [label="ε"];
+}
